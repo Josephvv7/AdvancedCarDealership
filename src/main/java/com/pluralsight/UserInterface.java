@@ -158,6 +158,11 @@ public class UserInterface {
         System.out.println("Vehicle added successfully!");
         DealershipFileManager manager = new DealershipFileManager();
         manager.saveDealership(dealership);
+
+        
+        Contract contract;
+        ContractFileManager manager = new ContractFileManager();
+        manager.saveContract(contract);
     }
 
     public void processRemoveVehicleRequest() {

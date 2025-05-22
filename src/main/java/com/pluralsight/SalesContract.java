@@ -15,6 +15,22 @@ public class SalesContract extends Contract {
         processingFee = vehicle.getPrice() < 10000 ? 295 : 495;
     }
 
+    public double getSalesTaxAmount() {
+        return salesTaxAmount;
+    }
+
+    public double getRecordingFee() {
+        return recordingFee;
+    }
+
+    public double getProcessingFee() {
+        return processingFee;
+    }
+
+    public boolean isFinanced() {
+        return isFinanced;
+    }
+
     @Override
     double getTotalPrice() {
         return getVehicleSold().getPrice() + salesTaxAmount + recordingFee + processingFee;

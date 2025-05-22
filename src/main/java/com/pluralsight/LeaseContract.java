@@ -27,6 +27,12 @@ public class LeaseContract extends Contract {
         return (totalPrice * monthlyInterestRate) / loanTermMonths;
     }
 
+    public double getExpectedEndingValue() {
+        return expectedEndingValue;
+    }
 
+    public double getLeaseFee() {
+        return leaseFee;
+    }
 
 }
